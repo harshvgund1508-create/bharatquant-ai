@@ -1,0 +1,66 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+.pnp
+.pnp.*
+
+# Python
+__pycache__/
+backend/app/__pycache__/
+backend/app/*/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+.env
+backend/.env
+frontend/.env*
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+backend/.pytest_cache/
+.coverage
+htmlcov/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Next.js
+.next/
+frontend/.next/
+out/
+frontend/out/
+
+# Database
+*.sqlite
+*.sqlite3
+*.db
+bharatquant.db
+backend/bharatquant.db
+
+# Logs & Debug
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# System & IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
