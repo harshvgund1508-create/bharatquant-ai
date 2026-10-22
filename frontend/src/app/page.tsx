@@ -12,7 +12,7 @@ import ExplainableAICard from "@/components/ExplainableAICard";
 import PaperTradeModal from "@/components/PaperTradeModal";
 import { Cpu } from "lucide-react";
 
-const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://127.0.0.1:8000";
+const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "";
 
 interface ForecastPayload {
   symbol: string;
@@ -201,7 +201,7 @@ export default function StockPredictorPage() {
         tickers={tickers.length > 0 ? tickers : watchlist.map((w) => ({
           symbol: w.symbol,
           name: w.name,
-          last_price: w.base_price,
+          last_price: w.base_price || 1000,
           change: 12.5,
           change_percent: 0.85,
           currency: w.currency,
